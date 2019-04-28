@@ -10,16 +10,22 @@ public class DetermineLargestWord {
          Should return "10 biological".
          */
         String s = "Human brain is a biological learning machine";
-        Map<Integer, String> wordNLength = findTheLargestWord(s);
-        //implement
+
+        String[] word = s.split(" "); /*won't  take into consideration spaces*/
+        String maxlethWord = ""; /*word does not have spaces*/
+        for (int i = 0; i < word.length; i++) { /* i= first index "human"*/
+            if (word[i].length() >= maxlethWord.length()) {
+                maxlethWord = word[i];
+            }
+        }
+        System.out.print(maxlethWord.length() + " " + maxlethWord);
+
 
     }
 
-    public static Map<Integer, String> findTheLargestWord(String wordGiven) {
-        Map<Integer, String> map = new HashMap<Integer, String>();
-        String st = "";
-        //implement
 
-        return map;
-    }
 }
+
+
+
+

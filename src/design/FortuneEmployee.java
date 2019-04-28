@@ -16,7 +16,33 @@ public class FortuneEmployee {
 	public static void main(String[] args) {
 
 
+		EmployeeInfo employeeInfoConstructor1 = new EmployeeInfo();
+		EmployeeInfo employeeInfoConstructor2 = new EmployeeInfo(1);
+		EmployeeInfo employeeInfoConstructor3 = new EmployeeInfo("Winsen",2);
+
+		EmployeeInfo employeeInfo = new EmployeeInfo();
+
+		employeeInfo.vacationTime();
+
+		employeeInfo.NestedMethod();
+
+		employeeInfo.setCompanyName("7-Eleven");
+		System.out.println(employeeInfo.getCompanyName());
+
+		EmployeeInfo.calculateEmployeeBonus(2);
+		EmployeeInfo.calculateEmployeePension();
+
 
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
